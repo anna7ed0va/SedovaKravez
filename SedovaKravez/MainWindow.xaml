@@ -1,0 +1,41 @@
+﻿<Window x:Class="SedovaKravez.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SedovaKravez"
+        mc:Ignorable="d"
+        Title="    Ветеренарная клиника" Height="450" Width="800" 
+        MaxHeight ="450" MaxWidth="800" Icon="resource\veterinary 1.png">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock  HorizontalAlignment="Center" Grid.RowSpan="3" Margin="30" FontSize="20" FontWeight="Bold">Авторизация</TextBlock>
+            <TextBlock  HorizontalAlignment="Center" Grid.RowSpan="3" Margin="-20" FontSize="13" Foreground="#808080">Войдите в аккаунт, чтобы продолжить</TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Column="1" Margin="1.111,119,263.556,117.667" Grid.RowSpan="3" Grid.ColumnSpan="2" Foreground="#808080">Ваш логин:</TextBlock>
+        <TextBox Name="loginBox" MinWidth="250" Margin="2.111,10.111,7.222,101.778" Grid.Row="1" Grid.Column="1"></TextBox>
+        <TextBox Name="passwordBox" Grid.Row="1" MinWidth="250" Margin="1.111,90.111,7.222,22.778" Grid.Column="1"></TextBox>
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="2.111,61.111,263.556,55.778" Grid.ColumnSpan="2" Foreground="#808080">Ваш пароль:</TextBlock>
+
+
+        <StackPanel Grid.Row="2" HorizontalAlignment="Center" Grid.Column="1">
+            <Button IsDefault="True" MinWidth="60" Margin="10" Height="30" Foreground="White" Background="#00C2EC" BorderBrush="Transparent" FontWeight="Bold" Width="133" Click="Button_Click" >Авторизоваться</Button>
+        </StackPanel>
+
+
+
+
+
+    </Grid>
+</Window>
